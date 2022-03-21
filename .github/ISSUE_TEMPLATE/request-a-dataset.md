@@ -1,6 +1,6 @@
 ---
 name: Request a dataset
-about: Request a dataset to be added to the Subak Data Catalogue
+about: Suggest a dataset to be added to the Subak Data Catalogue
 title: "[Dataset Request]"
 labels: enhancement
 assignees: ''
