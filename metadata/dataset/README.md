@@ -3,10 +3,12 @@
 In order for Subak to index new datasets in the Data Catalogue we need to collect various 
 information about the dataset which we store as metadata. 
 
-## Data Catalogue Metatdata Schema
+## Data Catalogue Metadata Schema
 We provide a [YAML schema file](./schema.yml) to help data contributors understand what metadata we collect and the format we expect this to take. For each field in the schema we describe its type, a description of what it is for, whether it is strictly required, a restricted list of options (if applicable) and an example value.
 
 We also provide a template [metadata.yml](./template/metadata.yml) file ready for you to populate based on the rules of the schema and an example pre-filled [metadata.example.yml](./template/metadata.example.yml) file. The [README.md](./template/README.md) and [SOURCES.md](./template/SOURCES.md) files in the template provide a convenient way to populate the `description` and `data_sources` metadata fields which are generally more verbose and better described via [markdown](https://www.markdownguide.org/).
+
+### [Download the metadata template](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/ClimateSubak/community/tree/main/metadata/dataset/template)
 
 If you have any issues when working with our schema, please [start a discussion](https://github.com/ClimateSubak/community/discussions/new?category=q-a) and we'll address any issues you have to get your dataset indexed in the Data Catalogue.
 
