@@ -4,7 +4,6 @@ about: Describe this issue template's purpose here.
 title: "[Dataset Suggestion]"
 labels: enhancement
 assignees: ''
-
 ---
 
 **What is the dataset you think should be added, please provide a link**

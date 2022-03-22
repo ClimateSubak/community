@@ -1,0 +1,57 @@
+subak_dc_schema_version: 2
+entity_type: dataset
+fields:
+  title: 
+  owner_org: 
+  overview: 
+  description: README.md
+  keywords: 
+  temporal_start: 
+  temporal_end: 
+  temporal_resolution: 
+  update_frequency: 
+  geo_region: 
+  countries:
+    - 
+    - 
+    - 
+
+  spatial_resolution: 
+  license: 
+  source: 
+  author: 
+  data_applications:
+    - title: 
+      url: 
+      author: 
+
+    - title: 
+      url: 
+      author: 
+
+  data_sources: SOURCES.md
+  resources:
+    - url: 
+      name: 
+      description: 
+      format: 
+      file_size: 
+      data_fields:
+        - name: 
+          type: 
+          description: 
+          units:
+
+        - name: 
+          type: 
+          description: 
+          units:
+
+        - name: 
+          type: 
+          description: 
+          units:
+
+    - url: 
+      name: 
+      '...':

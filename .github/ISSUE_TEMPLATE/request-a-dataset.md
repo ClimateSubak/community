@@ -4,7 +4,6 @@ about: Suggest a dataset to be added to the Subak Data Catalogue
 title: "[Dataset Request]"
 labels: enhancement
 assignees: ''
-
 ---
 
 **Does the dataset you want exist? If so please use Nominate a dataset**

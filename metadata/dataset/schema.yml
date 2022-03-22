@@ -1,0 +1,509 @@
+subak_dc_schema_version: 2
+entity_type: dataset
+
+fields:
+  - name: title
+    description: Name of the dataset
+    type: short text
+    required: true
+    example: Global Electricity Generation and Demand by Country
+    
+  - name: owner_org
+    description: Name of the organisation that has produced/published the dataset
+    type: short text
+    required: true
+    example: Ember Climate
+
+  - name: overview
+    description: One or two sentences describing the purpose of the dataset
+    type: long text
+    required: false
+    example: A global dataset for electricity generation & demand across 217 countries from 2000 to 2020. 
+
+  - name: description
+    description: A Detailed description of the dataset, including data quality and processing techniques.
+    type: long text or README.md markdown file
+    required: true
+    example: README.md
+
+  - name: keywords
+    description: Comma-separated list of keywords describing the dataset
+    type: short text
+    required: false
+    example: electricity, power, energy generation, energy demand
+
+  - name: temporal_start
+    description: Earliest date covered by dataset
+    type: date (YYYY-MM-DD)
+    required: false
+    example: 2000-01-01
+    
+  - name: temporal_end
+    description: Latest date covered by dataset (Leave blank if dataset is updated to the present day)
+    type: date (YYYY-MM-DD)
+    required: false
+    example: 2020-12-31
+
+  - name: temporal_resolution
+    description: Most granular time resolution of the dataset
+    type: choice
+    required: false
+    choices:
+    - year
+    - quarter
+    - month
+    - week
+    - day
+    - hour
+    - minute
+    - second
+    - sub-second
+    example: year
+  
+  - name: update_frequency
+    description: How often the dataset is updated
+    type: choice
+    required: false
+    choices:
+    - hourly
+    - daily
+    - weekly
+    - monthly
+    - quarterly
+    - annually
+    - never
+    example: annually
+
+  - name: geo_region
+    description: Broad geographic region that the dataset covers
+    type: choice
+    required: false
+    choices:
+    - world
+    - africa
+    - americas
+    - antarctica
+    - asia
+    - europe
+    - oceania
+    example: europe
+  
+  - name: countries
+    description: List of countries that the dataset covers
+    type: multi-choice
+    required: false
+    choices:
+    - Afghanistan
+    - Åland Islands
+    - Albania
+    - Algeria
+    - American Samoa
+    - Andorra
+    - Angola
+    - Anguilla
+    - Antarctica
+    - Antigua and Barbuda
+    - Argentina
+    - Armenia
+    - Aruba
+    - Australia
+    - Austria
+    - Azerbaijan
+    - Bahamas
+    - Bahrain
+    - Bangladesh
+    - Barbados
+    - Belarus
+    - Belgium
+    - Belize
+    - Benin
+    - Bermuda
+    - Bhutan
+    - Bolivia (Plurinational State of)
+    - Bonaire, Sint Eustatius and Saba
+    - Bosnia and Herzegovina
+    - Botswana
+    - Bouvet Island
+    - Brazil
+    - British Indian Ocean Territory
+    - Brunei Darussalam
+    - Bulgaria
+    - Burkina Faso
+    - Burundi
+    - Cabo Verde
+    - Cambodia
+    - Cameroon
+    - Canada
+    - Cayman Islands
+    - Central African Republic
+    - Chad
+    - Chile
+    - China
+    - Christmas Island
+    - Cocos (Keeling) Islands
+    - Colombia
+    - Comoros
+    - Congo
+    - Congo, Democratic Republic of the
+    - Cook Islands
+    - Costa Rica
+    - Côte d'Ivoire
+    - Croatia
+    - Cuba
+    - Curaçao
+    - Cyprus
+    - Czechia
+    - Denmark
+    - Djibouti
+    - Dominica
+    - Dominican Republic
+    - Ecuador
+    - Egypt
+    - El Salvador
+    - Equatorial Guinea
+    - Eritrea
+    - Estonia
+    - Eswatini
+    - Ethiopia
+    - Falkland Islands (Malvinas)
+    - Faroe Islands
+    - Fiji
+    - Finland
+    - France
+    - French Guiana
+    - French Polynesia
+    - French Southern Territories
+    - Gabon
+    - Gambia
+    - Georgia
+    - Germany
+    - Ghana
+    - Gibraltar
+    - Greece
+    - Greenland
+    - Grenada
+    - Guadeloupe
+    - Guam
+    - Guatemala
+    - Guernsey
+    - Guinea
+    - Guinea-Bissau
+    - Guyana
+    - Haiti
+    - Heard Island and McDonald Islands
+    - Holy See
+    - Honduras
+    - Hong Kong
+    - Hungary
+    - Iceland
+    - India
+    - Indonesia
+    - Iran (Islamic Republic of)
+    - Iraq
+    - Ireland
+    - Isle of Man
+    - Israel
+    - Italy
+    - Jamaica
+    - Japan
+    - Jersey
+    - Jordan
+    - Kazakhstan
+    - Kenya
+    - Kiribati
+    - Korea (Democratic People's Republic of)
+    - Korea, Republic of
+    - Kuwait
+    - Kyrgyzstan
+    - Lao People's Democratic Republic
+    - Latvia
+    - Lebanon
+    - Lesotho
+    - Liberia
+    - Libya
+    - Liechtenstein
+    - Lithuania
+    - Luxembourg
+    - Macao
+    - Madagascar
+    - Malawi
+    - Malaysia
+    - Maldives
+    - Mali
+    - Malta
+    - Marshall Islands
+    - Martinique
+    - Mauritania
+    - Mauritius
+    - Mayotte
+    - Mexico
+    - Micronesia (Federated States of)
+    - Moldova, Republic of
+    - Monaco
+    - Mongolia
+    - Montenegro
+    - Montserrat
+    - Morocco
+    - Mozambique
+    - Myanmar
+    - Namibia
+    - Nauru
+    - Nepal
+    - Netherlands
+    - New Caledonia
+    - New Zealand
+    - Nicaragua
+    - Niger
+    - Nigeria
+    - Niue
+    - Norfolk Island
+    - North Macedonia
+    - Northern Mariana Islands
+    - Norway
+    - Oman
+    - Pakistan
+    - Palau
+    - Palestine, State of
+    - Panama
+    - Papua New Guinea
+    - Paraguay
+    - Peru
+    - Philippines
+    - Pitcairn
+    - Poland
+    - Portugal
+    - Puerto Rico
+    - Qatar
+    - Réunion
+    - Romania
+    - Russian Federation
+    - Rwanda
+    - Saint Barthélemy
+    - Saint Helena, Ascension and Tristan da Cunha
+    - Saint Kitts and Nevis
+    - Saint Lucia
+    - Saint Martin (French part)
+    - Saint Pierre and Miquelon
+    - Saint Vincent and the Grenadines
+    - Samoa
+    - San Marino
+    - Sao Tome and Principe
+    - Saudi Arabia
+    - Senegal
+    - Serbia
+    - Seychelles
+    - Sierra Leone
+    - Singapore
+    - Sint Maarten (Dutch part)
+    - Slovakia
+    - Slovenia
+    - Solomon Islands
+    - Somalia
+    - South Africa
+    - South Georgia and the South Sandwich Islands
+    - South Sudan
+    - Spain
+    - Sri Lanka
+    - Sudan
+    - Suriname
+    - Svalbard and Jan Mayen
+    - Sweden
+    - Switzerland
+    - Syrian Arab Republic
+    - Taiwan, Province of China
+    - Tajikistan
+    - Tanzania, United Republic of
+    - Thailand
+    - Timor-Leste
+    - Togo
+    - Tokelau
+    - Tonga
+    - Trinidad and Tobago
+    - Tunisia
+    - Turkey
+    - Turkmenistan
+    - Turks and Caicos Islands
+    - Tuvalu
+    - Uganda
+    - Ukraine
+    - United Arab Emirates
+    - United Kingdom of Great Britain and Northern Ireland
+    - United States of America
+    - United States Minor Outlying Islands
+    - Uruguay
+    - Uzbekistan
+    - Vanuatu
+    - Venezuela (Bolivarian Republic of)
+    - Viet Nam
+    - Virgin Islands (British)
+    - Virgin Islands (U.S.)
+    - Wallis and Futuna
+    - Western Sahara
+    - Yemen
+    - Zambia
+    - Zimbabwe
+    example:
+    - United Kingdom of Great Britain and Northern Ireland
+    - Spain
+    - France
+
+  - name: spatial_resolution
+    description: the spatial resolution that most closely represents the samples or aggregations within the dataset
+    type: choice
+    required: false
+    choices:
+    - global
+    - continent/region
+    - country
+    - state/county
+    - city/town
+    - street/postcode
+    - building/residence
+    - device/asset
+    - 100km-grid
+    - 10km-grid
+    - 1km-grid
+    - 100m-grid
+    - 10m-grid
+    - 1m-grid
+    example: country
+
+  - name: license
+    description: Name of the license you wish to publish the data under
+    type: choice
+    required: false
+    choices:
+    - Open Data Commons Public Domain Dedication and License (PDDL)
+    - Open Data Commons Open Database License (ODbL)
+    - Open Data Commons Attribution License
+    - Creative Commons CCZero
+    - Creative Commons Attribution
+    - Creative Commons Attribution Share-Alike
+    - GNU Free Documentation License
+    - Other (Open)
+    - Other (Public Domain)
+    - Other (Attribution)
+    - UK Open Government Licence (OGL)
+    - Creative Commons Non-Commercial (Any)
+    - Other (Non-Commercial)
+    - Other (Not Open)
+    example: Creative Commons Attribution
+
+  - name: source
+    description: URL for any other online home for the dataset
+    type: url
+    required: false
+    example: https://ember-climate.org/data/global-electricity/
+
+  - name: author
+    description: Contact point for the Data Catalogue
+    type: short text
+    required: false
+    example: Dave Jones - dave@example.com
+
+  - name: data_applications
+    description: What has the data been used for
+    type: repeating, multiple sub-fields
+    required: false
+    repeating_subfields:
+    - name: category
+      description: Category
+      type: choice
+      required: true      
+      choices:
+      - tutorials
+      - tools and applications
+      - publications
+      example: publications
+
+    - name: title
+      description: Title
+      type: short text
+      required: true
+      example: Global Electricity Review Report 2021
+
+    - name: url
+      description: URL
+      type: url
+      required: true
+      example: https://ember-climate.org/project/global-electricity-review-2021/
+
+    - name: author
+      description: Author
+      type: short text
+      required: false
+      example: Ember Climate
+
+  - name: data_sources
+    description: Data sources
+    type: long text or SOURCES.md markdown file
+    required: false
+    example: SOURCES.md
+
+  - name: resources
+    description: Fields describing the data files that make up this dataset
+    type: repeating, multiple sub-fields
+    required: true
+    repeating_subfields:
+    - name: url
+      description: URL to online resource or or name of local file to be uploaded
+      type: url
+      required: true
+      example: https://subak.org/my-dataset.csv
+
+    - name: name
+      description: Name for the resource
+      type: short text
+      required: false
+      example: Core Dataset
+
+    - name: description
+      description: Description of the file
+      type: short text
+      required: false
+      example: Main data values for dataset
+
+    - name: format
+      description: File format
+      type: short text
+      required: false
+      example: CSV
+
+    - name: file_size
+      description: File size (in bytes)
+      type: number
+      required: false
+      example: 102400
+
+    - name: data_fields
+      description: Rich information describing all the data fields (if tabular)
+      type: repeating, multiple sub-fields
+      required: false
+      repeating_subfields:
+      - name: name
+        description: Field name
+        type: short text
+        required: true
+        example: Energy consumption
+
+      - name: type
+        description: Field type
+        type: choice
+        required: false
+        choices:
+        - numeric
+        - text
+        - date/time
+        example: numeric
+
+      - name: description
+        description: Field description
+        type: short text
+        required: false
+        example: The household energy consumption for the period
+
+      - name: units
+        description: Field units
+        type: short text
+        required: false
+        example: kWh

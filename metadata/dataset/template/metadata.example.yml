@@ -1,0 +1,44 @@
+subak_dc_schema_version: 2
+entity_type: dataset
+fields:
+  title: Global Electricity Generation and Demand by Country
+  owner_org: Ember Climate
+  overview: A global dataset for electricity generation & demand across 217 countries from 2000 to 2020. 
+  description: README.md
+  keywords: electricity, power, energy generation, energy demand
+  temporal_start: 2000-01-01
+  temporal_end: 2020-12-31
+  temporal_resolution: year
+  update_frequency: annually
+  geo_region: europe
+  countries:
+    - United Kingdom of Great Britain and Northern Ireland
+    - Spain
+    - France
+
+  spatial_resolution: country
+  license: Creative Commons Attribution
+  source: https://ember-climate.org/data/global-electricity/
+  author: Dave Jones - dave@example.com
+  data_applications:
+    - title: Global Electricity Review Report 2021
+      url: https://ember-climate.org/project/global-electricity-review-2021/
+      author: Ember Climate
+      
+  data_sources: SOURCES.md
+  resources:
+    - url: https://subak.org/my-dataset.csv
+      name: Core Dataset
+      description: Main data values for dataset
+      format: CSV
+      file_size: 102400
+      data_fields:
+        - name: ID
+          type: numeric
+          description: Pseudo-random Household Identifier
+          units: null
+
+        - name: Energy consumption
+          type: numeric
+          description: The household energy consumption for the period
+          units: kWh
