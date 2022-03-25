@@ -21,10 +21,102 @@ fields:
     example: A global dataset for electricity generation & demand across 217 countries from 2000 to 2020. 
 
   - name: description
-    description: A Detailed description of the dataset, including data quality and processing techniques.
+    description: A Detailed description of the dataset, including data quality and processing techniques
     type: long text or README.md markdown file
     required: true
     example: README.md
+
+  - name: primary_taxonomy_category
+    description: The primary taxonomy that your would categorise the dataset under
+    type: choice
+    required: false
+    choices:
+    - Emission Reduction > Upstream Fossil Fuel > All
+    - Emission Reduction > Electricity > All
+    - Emission Reduction > Electricity > Fossil Fuel > All
+    - Emission Reduction > Electricity > Fossil Fuel > Coal
+    - Emission Reduction > Electricity > Fossil Fuel > Oil
+    - Emission Reduction > Electricity > Fossil Fuel > Gas
+    - Emission Reduction > Electricity > Renewables > All
+    - Emission Reduction > Electricity > Renewables > Solar
+    - Emission Reduction > Electricity > Renewables > Wind
+    - Emission Reduction > Electricity > Renewables > Hydro electricity
+    - Emission Reduction > Electricity > Nuclear
+    - Emission Reduction > Electricity > Storage
+    - Emission Reduction > Buildings > All
+    - Emission Reduction > Buildings > Residential 
+    - Emission Reduction > Buildings > Commercial
+    - Emission Reduction > Transport > All
+    - Emission Reduction > Transport > Land > All
+    - Emission Reduction > Transport > Land > Light Road
+    - Emission Reduction > Transport > Land > Heavy Road
+    - Emission Reduction > Transport > Land > Rail
+    - Emission Reduction > Transport > Sea
+    - Emission Reduction > Transport > Air
+    - Emission Reduction > Industry > Construction & Cement
+    - Emission Reduction > Industry > Metallurgy
+    - Emission Reduction > Industry > Chemical & Petrochemical
+    - Emission Reduction > Industry > Other
+    - Emission Reduction > Agriculture > All
+    - Emission Reduction > Agriculture > Livestock & Manure
+    - Emission Reduction > Agriculture > Rice
+    - Emission Reduction > Agriculture > Soils
+    - Emission Reduction > Land Use & Forestry > All
+    - Emission Reduction > Land Use & Forestry > Burning
+    - Emission Reduction > Land Use & Forestry > Landfill
+    - Emission Reduction > Waste
+    - Societal > Climate & Weather
+    - Societal > Policy
+    - Societal > Green finance
+    - Societal > Education
+    - Societal > Climate Impacts
+    example: Emission Reduction > Electricity > Renewables > Solar
+
+  - name: secondary_taxonomy_category
+    description: The (optional) secondary taxonomy that your would categorise the dataset under
+    type: choice
+    required: false
+    choices:
+    - Emission Reduction > Upstream Fossil Fuel > All
+    - Emission Reduction > Electricity > All
+    - Emission Reduction > Electricity > Fossil Fuel > All
+    - Emission Reduction > Electricity > Fossil Fuel > Coal
+    - Emission Reduction > Electricity > Fossil Fuel > Oil
+    - Emission Reduction > Electricity > Fossil Fuel > Gas
+    - Emission Reduction > Electricity > Renewables > All
+    - Emission Reduction > Electricity > Renewables > Solar
+    - Emission Reduction > Electricity > Renewables > Wind
+    - Emission Reduction > Electricity > Renewables > Hydro electricity
+    - Emission Reduction > Electricity > Nuclear
+    - Emission Reduction > Electricity > Storage
+    - Emission Reduction > Buildings > All
+    - Emission Reduction > Buildings > Residential 
+    - Emission Reduction > Buildings > Commercial
+    - Emission Reduction > Transport > All
+    - Emission Reduction > Transport > Land > All
+    - Emission Reduction > Transport > Land > Light Road
+    - Emission Reduction > Transport > Land > Heavy Road
+    - Emission Reduction > Transport > Land > Rail
+    - Emission Reduction > Transport > Sea
+    - Emission Reduction > Transport > Air
+    - Emission Reduction > Industry > Construction & Cement
+    - Emission Reduction > Industry > Metallurgy
+    - Emission Reduction > Industry > Chemical & Petrochemical
+    - Emission Reduction > Industry > Other
+    - Emission Reduction > Agriculture > All
+    - Emission Reduction > Agriculture > Livestock & Manure
+    - Emission Reduction > Agriculture > Rice
+    - Emission Reduction > Agriculture > Soils
+    - Emission Reduction > Land Use & Forestry > All
+    - Emission Reduction > Land Use & Forestry > Burning
+    - Emission Reduction > Land Use & Forestry > Landfill
+    - Emission Reduction > Waste
+    - Societal > Climate & Weather
+    - Societal > Policy
+    - Societal > Green finance
+    - Societal > Education
+    - Societal > Climate Impacts
+    example: Emission Reduction > Electricity > Storage
 
   - name: keywords
     description: Comma-separated list of keywords describing the dataset
@@ -61,7 +153,7 @@ fields:
     example: year
   
   - name: update_frequency
-    description: How often the dataset is updated
+    description: How often the dataset is updated?
     type: choice
     required: false
     choices:

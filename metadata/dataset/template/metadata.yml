@@ -5,6 +5,8 @@ fields:
   owner_org: 
   overview: 
   description: README.md
+  primary_taxonomy_category:
+  secondary_taxonomy_category:
   keywords: 
   temporal_start: 
   temporal_end: 

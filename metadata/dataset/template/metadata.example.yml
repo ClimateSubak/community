@@ -5,6 +5,8 @@ fields:
   owner_org: Ember Climate
   overview: A global dataset for electricity generation & demand across 217 countries from 2000 to 2020. 
   description: README.md
+  primary_taxonomy_category: Emission Reduction > Electricity > Renewables > Solar
+  secondary_taxonomy_category: Emission Reduction > Electricity > Storage
   keywords: electricity, power, energy generation, energy demand
   temporal_start: 2000-01-01
   temporal_end: 2020-12-31
